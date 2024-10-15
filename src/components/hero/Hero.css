@@ -1,0 +1,42 @@
+.hero-container{
+    margin-top: 40px;
+}
+
+.hero-heading{
+    font-family: 'Poppins';
+    color:var(--white);
+    font-weight: 500;
+    font-size: 50px;
+}
+
+.separate-color{
+    color:var(--yellow);
+    font-weight: 700;
+}
+
+.hero-secondary-heading{
+    color:var(--white);
+    font-family: "Source Code Pro", monospace;
+    font-size: 31px;
+}
+.hero-description{
+    font-size: 26px;
+    color: var(--white);
+    font-family: "Source Code Pro", monospace;
+    padding: 0;
+    margin-bottom:6px;
+}
+
+.resume-download-btn{
+    margin-top: 30px;
+    padding:10px 30px;
+    font-size: 18px;
+    background-color: var(--yellow);
+    border: 2px solid var(--yellow);
+}
+
+.resume-download-btn:hover{
+    background-color: transparent;
+    border: 2px solid var(--yellow);
+    color: var(--yellow);
+}
