@@ -1,0 +1,17 @@
+.page-heading{
+    font-size: 50px;
+    font-weight: 600;
+    margin-top: 70px;
+    color: var(--white);
+}
+
+.page-heading-dot{
+    background-color: var(--yellow);
+    margin-left: 5px;
+    width: 60px;
+    display: inline-block;
+    height: 6px;
+    color: var(--yellow);
+    font-size: 60px;
+    border-radius: 50px;
+}

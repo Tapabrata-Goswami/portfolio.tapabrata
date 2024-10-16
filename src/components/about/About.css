@@ -1,0 +1,45 @@
+.hashtag {
+    display: inline-block;
+    margin-left:3px ;
+    margin-right: 3px;
+    color: var(--yellow); /* or any color you prefer */
+    font-weight: bold; /* optional: make hashtags bold */
+}
+
+.about-me-content-p{
+    font-size: 18px;
+    letter-spacing: .5px;
+    color: var(--white);
+    line-height: 28px;
+}
+
+.about-small-heading{
+    color:var(--white);
+}
+
+.education-heading{
+    margin-bottom: 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--white);
+}
+
+.edu-subheading{
+    font-size: 14px;
+    font-weight: 400;
+    display: block;
+    margin-bottom: 20px;
+    color: var(--white);
+}
+
+.edu-palce{
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--white);
+}
+
+.skill-icons{
+    height: 40px;
+    margin-top: 20px;
+    margin-right: 20px;
+}
