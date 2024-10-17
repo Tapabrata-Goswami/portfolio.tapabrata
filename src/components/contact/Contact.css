@@ -1,0 +1,36 @@
+.contact-heading{
+
+    font-size: 35px;
+    font-weight: 600;
+    color:var(--white);
+}
+
+.form-control{
+    height: 54px;
+    border:2px solid var(--yellow);
+    background-color: transparent;
+    
+}
+
+.form-control:focus{
+    background-color: transparent;
+    border:2px solid var(--yellow);
+    outline:2px solid var(--yellow);
+    color: var(--white);
+}
+
+textarea.form-control{
+    height: 94px;
+}
+
+.get-in-touch-info{
+    margin-bottom: 2px;
+    font-size: 18px;
+    color: var(--white);
+}
+
+.download-resume{
+    background-color: var(--yellow);
+    border: var(--yellow);
+}
+

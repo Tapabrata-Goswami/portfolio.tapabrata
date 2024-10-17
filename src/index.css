@@ -17,3 +17,7 @@ body{
     background-color: var(--bg-black);
     font-family: "Montserrat", sans-serif;
 }
+
+.bt-100{
+    margin-bottom: 200px;
+}
