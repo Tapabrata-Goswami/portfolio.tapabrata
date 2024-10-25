@@ -1,0 +1,45 @@
+
+.sticky-icons{
+    position: fixed;
+    top: 45%;
+    left: -40px;
+    display: flex;
+    align-items: center;
+    gap: 30px; 
+    transform: rotate(-90deg);
+}
+
+.sticky-icn-box{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    transform: rotate(90deg);
+    margin-left:20px ;
+}
+
+.sticky-icn-box >a {
+    color: var(--white);
+}
+
+.stert-line{
+    width: 60px;
+    background-color:var(--white) ;
+    height: 1px;
+}
+
+.stickyheading{
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 0;
+    color: var(--white);
+    /* margin-right:30px; */
+}
+
+
+
+@media only screen and (max-width:860px){
+    .sticky-icons {
+        top: 310px;
+        left: -65px;
+    }
+}
