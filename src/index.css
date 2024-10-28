@@ -40,3 +40,16 @@ body{
     position: absolute;
     z-index: 111;
 }
+
+@media only screen and (max-width:680px){
+    html,body{
+        cursor:default;
+    }
+    button,
+    a,input, textarea {
+        cursor:default !important; 
+    }
+    #circularcursor {
+        display: none;
+    }
+}
