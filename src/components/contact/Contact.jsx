@@ -2,7 +2,7 @@ import './Contact.css'
 
 function Contact() {
     return (
-        <div className="container my-5">
+        <div className="container my-5 pb-5">
             <div className='row justify-content-center ml-100 get-in-touch-contaier'>
                 <div className='col-md-6 d-flex align-items-center'>
                     <div>
