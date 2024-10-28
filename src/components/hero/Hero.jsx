@@ -6,7 +6,7 @@ function Hero(){
         <div className="container hero-container">
             <div className="row align-items-center">
                 <div className="col-md-6">
-                    <img src={tgImage} alt="" />
+                    <img class="tapabrata-image" src={tgImage} alt="" />
                 </div>
                 <div className="col-md-6">
                     <h2 className='h1 hero-heading'>Hi, I'm <span className="separate-color">Tapabrata</span> 👋</h2>

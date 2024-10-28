@@ -39,3 +39,17 @@
     background-color:var(--yellow);
     transition: 0.8s ease-in-out;
 }
+
+.Menu-bar-mob{
+    display: none;
+}
+
+.hambuger-menu{
+    color: var(--white);
+}
+
+@media only screen and ( max-width:680px){
+    .main-menu-col{
+        display:none;
+    }
+}
