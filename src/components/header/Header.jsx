@@ -11,10 +11,10 @@ function Header(){
                 </div>
                 <div className="col-md-8 main-menu-col">
                     <ul className="d-flex justify-content-end align-items-center main-menu-items">
-                        <li className="menu-item"><a href="">About me</a></li>
-                        <li className="menu-item"><a href="">Experience</a></li>
-                        <li className="menu-item"><a href="">Portfolio</a></li>
-                        <li className="menu-item"><a href="">Contact me</a></li>
+                        <li className="menu-item"><a href="#about-me">About me</a></li>
+                        <li className="menu-item"><a href="#experience">Experience</a></li>
+                        <li className="menu-item"><a href="#portfolio">Portfolio</a></li>
+                        <li className="menu-item"><a href="#contact-me">Contact me</a></li>
                     </ul>
                 </div>
                 <div className="Menu-bar-mob">

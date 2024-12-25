@@ -2,7 +2,7 @@ import './About.css'
 
 function About() {
     return (
-        <div className='container my-5'>
+        <div className='container my-5' id='about-me'>
 
 
             <div className='row d-flex justify-content-center'>
