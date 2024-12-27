@@ -5,7 +5,7 @@ function Contact() {
         <div className="container my-5 pb-5">
             <div className='row justify-content-center ml-100 get-in-touch-contaier'>
                 <div className='col-md-6 d-flex align-items-center'>
-                    <div>
+                    <div className='mob-pd-b-2'>
                         <h6 className='contact-heading pb-3'>Get in touch</h6>
                         <p className='get-in-touch-info'><b>Email:</b> tapabratagoswami21@gmail.com</p>
                         <p className='get-in-touch-info'><b>Phone:</b> +91 86378 15595</p>
@@ -22,18 +22,18 @@ function Contact() {
                                         placeholder='First Name'
                                         className='form-control'
                                         // value={Fname}
-                                        onChange={(e) => setFname(e.target.value)}
+                                        //onChange={(e) => setFname(e.target.value)}
                                     />
                                 </div>
 
                             </div>
-                            <div className='col-md-6'>
+                            <div className='col-md-6 mob-pd-t-1'>
                                 <div className='form-group'>
                                     <input
                                         type="text"
                                         placeholder='Last Name'
                                         className='form-control'
-                                        onChange={(e) => setLname(e.target.value)}
+                                        //onChange={(e) => setLname(e.target.value)}
                                     />
                                 </div>
                             </div>

@@ -1,12 +1,36 @@
+import { useState, useEffect } from 'react'
 import './Portfolio.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
+
 function Portfolio() {
+    const [repos , updateRepos] = useState([]);
+    const [loading, updateLoading] = useState(true);
+    const [error, upadateError] = useState(null);
+
+    useEffect(()=>{
+        
+        const fetchRepos = async ()=>{
+            try{
+                const response = await fetch('https://api.github.com/users/Tapabrata-Goswami/repos');
+                const data = await response.json();
+                updateRepos(data);
+            }catch(err){
+                upadateError(err);
+            }finally{
+                updateLoading(false);
+            }
+        };
+        
+        fetchRepos();
+    },[]);
+
     return (
         <div className="container my-5">
             <div className='row'>
+                
                 <div className='col'>
                     <div className="card portfolio-card" >
                         {/* <img className="card-img-top" alt="Card image cap" /> */}

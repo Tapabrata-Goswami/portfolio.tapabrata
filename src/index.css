@@ -41,6 +41,22 @@ body{
     z-index: 111;
 }
 
+@media only screen and (max-width:767px){
+    .mob-pd-t-1{
+        padding-top: 10px;
+    }
+    .mob-pd-b-2{
+        padding-bottom: 20px;
+    }
+    .contact-heading {
+        font-size: 30px;
+        font-weight: 500;
+    }
+    .page-heading {
+        font-size: 45px;
+    }
+}
+
 @media only screen and (max-width:680px){
     html,body{
         cursor:default;
@@ -49,6 +65,7 @@ body{
     a,input, textarea {
         cursor:default !important; 
     }
+
     #circularcursor {
         display: none;
     }

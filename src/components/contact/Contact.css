@@ -34,3 +34,7 @@ textarea.form-control{
     border: var(--yellow);
 }
 
+input::placeholder{
+    color:var(--white) !important;
+    opacity: 1;
+}
