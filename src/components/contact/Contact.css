@@ -1,3 +1,5 @@
+
+
 .contact-heading{
 
     font-size: 35px;
@@ -5,18 +7,26 @@
     color:var(--white);
 }
 
+.contact-me-form-container{
+    background-color: var(--yellow);
+    border-radius: 4px;
+    border: 2px solid var(--bg-black);
+    box-shadow: 8px 8px 0 var(--white);
+}
+
 .form-control{
     height: 54px;
-    border:2px solid var(--yellow);
-    background-color: transparent;
+    border:2px solid var(--bg-black);
+    background-color: var(--white);
     
 }
 
 .form-control:focus{
-    background-color: transparent;
-    border:2px solid var(--yellow);
-    outline:2px solid var(--yellow);
-    color: var(--white);
+    /* background-color: transparent; */
+    border:2px solid var(--bg-black);
+    /* outline:2px solid var(--bg-black); */
+    outline: none;
+    color: var(--bg-black);
 }
 
 textarea.form-control{
@@ -29,12 +39,25 @@ textarea.form-control{
     color: var(--white);
 }
 
-.download-resume{
+.contact-form-sbmit-button{
     background-color: var(--yellow);
-    border: var(--yellow);
+    border: 2px solid var(--bg-black);
+    color: var(--bg-black);
+    padding: 5px 20px;
+    border-radius: 4px;
+}
+
+.contact-form-sbmit-button:hover{
+    color: var(--white);
+    outline: none;
+    border: 2px solid var(--bg-black);
+    background-color: var(--bg-black);
+    box-shadow: 3px 3px 2px var(--white);
+    transition: 0.3s;
 }
 
 input::placeholder{
-    color:var(--white) !important;
+    color: rgb(123, 123, 123) !important;
     opacity: 1;
+    font-size: 14px;
 }

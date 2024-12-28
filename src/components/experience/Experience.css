@@ -84,38 +84,48 @@
 /* The actual content */
 .content {
     padding: 20px 30px;
-    /* background-color: var(--light-blue); */
-    border: 2px solid var(--yellow);
     position: relative;
-    border-radius: 6px;
-    
+    border-radius: 5px;
 }
 
 .content > h2{
     font-size: 25px;
     font-weight: 600;
-    color: var(--white);
-    /* font-family: "Courier Prime", monospace; */
 }
-.content > p{
-    color: var(--white);
-}
+
 .company-name{
     font-size: 19px;
     font-weight: 500;
-    color: var(--white);
-    /* font-family: "Courier Prime", monospace; */
     margin-bottom: 0;
 }
 
 .company-year{
     font-size: 16px;
-    color: var(--white);
     font-weight: 300;
-    /* font-family: "Courier Prime", monospace; */
     display: inline-block;
     margin-bottom: 10px;
 }
+
+.content {
+    background-color: var(--yellow);
+    border: 2px solid var(--bg-black);
+    box-shadow: 10px 10px 0px var(--white);
+}
+.content > h2, .content > p, .content > .company-name, .content > .company-year{
+    color: var(--bg-black);
+}
+
+
+/* .content:hover {
+    background-color: var(--yellow);
+    border: 2px solid var(--bg-black);
+    box-shadow: 8px 8px 2px var(--white);
+    transition: all 0.9s ease-in-out; 
+}
+.content:hover > h2, .content:hover > p, .content:hover > .company-name, .content:hover > .company-year{
+    color: var(--bg-black);
+} */
+
 
 .right{
     padding: 10px 0px 10px 40px;

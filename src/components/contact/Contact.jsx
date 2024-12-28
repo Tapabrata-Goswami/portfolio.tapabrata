@@ -2,7 +2,7 @@ import './Contact.css'
 
 function Contact() {
     return (
-        <div className="container my-5 pb-5">
+        <div className="container my-5 pb-5" id="contact-me">
             <div className='row justify-content-center ml-100 get-in-touch-contaier'>
                 <div className='col-md-6 d-flex align-items-center'>
                     <div className='mob-pd-b-2'>
@@ -13,13 +13,13 @@ function Contact() {
 
                 </div>
                 <div className="col-md-6">
-                    <form action="">
+                    <form className='p-3 contact-me-form-container'>
                         <div className='row'>
                             <div className='col-md-6'>
                                 <div className='form-group'>
                                     <input
                                         type="text"
-                                        placeholder='First Name'
+                                        placeholder='First name*'
                                         className='form-control'
                                         // value={Fname}
                                         //onChange={(e) => setFname(e.target.value)}
@@ -31,7 +31,7 @@ function Contact() {
                                 <div className='form-group'>
                                     <input
                                         type="text"
-                                        placeholder='Last Name'
+                                        placeholder='Last name*'
                                         className='form-control'
                                         //onChange={(e) => setLname(e.target.value)}
                                     />
@@ -42,15 +42,24 @@ function Contact() {
                             <input
                                 type="email"
                                 className='form-control'
-                                placeholder='Email'
+                                placeholder='Email*'
+                                onChange={(e) => setEmail(e.target.value)}
+                            />
+                        </div>
+                        <div className="from-group mt-2">
+                            <input
+                                type="email"
+                                className='form-control'
+                                placeholder='Contact number*'
                                 onChange={(e) => setEmail(e.target.value)}
                             />
                         </div>
                         <div className='form-group mt-2'>
-                            <textarea className="form-control" rows="5" onChange={(e) => setMsg(e.target.value)}></textarea>
+                            <textarea className="form-control" rows="5" 
+                            placeholder="Enter your message" onChange={(e) => setMsg(e.target.value)}></textarea>
                         </div>
                         <div className='from-group'>
-                            <button className='btn btn-primary mt-2 download-resume' onClick={(e) => submit(e)}>Submit</button>
+                            <button className='btn btn-primary mt-2 contact-form-sbmit-button' onClick={(e) => submit(e)}>Submit</button>
                         </div>
                     </form>
                 </div>

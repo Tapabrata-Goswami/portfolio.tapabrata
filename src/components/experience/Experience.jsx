@@ -2,7 +2,7 @@ import "./Experience.css"
 
 function Experience(){
     return (
-        <div className="container my-5">
+        <div className="container my-5" id="experience">
             <div className='timeline'>
                 <div className="work-exp-box right">
                     <div className="content">

@@ -6,18 +6,19 @@
 html, body{
     width: 100%;
     height: 100%;
-    cursor: none;
+    /* cursor: none; */
 }
 
-button,
+/* button,
 a,input, textarea {
   cursor: none !important; 
-}
+} */
 
 :root{
     --bg-black:#222222;
     --white:#fff;
     --yellow:rgb(255, 187, 0);
+    --yellow-shadow:rgba(255, 205, 67, 0.46);
 }
 
 body{
@@ -29,7 +30,7 @@ body{
     margin-bottom: 200px;
 }
 
-#circularcursor {
+/* #circularcursor {
     background-color: var(--yellow);
     border:2px solid rgb(255, 255, 255);    
     height:25px;
@@ -39,7 +40,7 @@ body{
     -webkit-border-radius:50%;
     position: absolute;
     z-index: 111;
-}
+} */
 
 @media only screen and (max-width:1199px){
     .page-heading {

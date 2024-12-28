@@ -1,11 +1,15 @@
-.card{
+/* .card{
     width: 18rem;
-}
+} */
 
 .portfolio-card{
-    border: 2px solid var(--yellow);
+    /* border: 2px solid var(--yellow);
     background-color: transparent;
-    color: var(--white);
+    color: var(--white); */
+    border-radius: 4px;
+    background-color: var(--yellow);
+    border: 2px solid var(--bg-black);
+    box-shadow: 10px 10px 0px var(--white);
 }
 
 .portfolio-githubbtn {
@@ -18,7 +22,29 @@
     font-size: 32px;
     margin-left: 20px;
     position: absolute;
+    color: var(--white);
+    border: 2px solid var(--bg-black);
+    border-radius: 50%;
+    background-color: var(--bg-black);
     /* padding-top: 10px; */
+}
+
+.portfolio-project-btn{
+    border-radius: 3px;
+    background-color: transparent;
+    color: var(--bg-black);
+    border: 2px solid var(--bg-black);
+    font-family: "Courier Prime", monospace;
+    outline: none;
+}
+
+.portfolio-project-btn:hover{
+    color: var(--white);
+    outline: none;
+    border: 2px solid var(--bg-black);
+    background-color: var(--bg-black);
+    box-shadow: 3px 3px 2px var(--white);
+    transition: 0.3s;
 }
 
 .card-title{
@@ -27,7 +53,7 @@
 }
 
 .card-text{
-    font-size: 18px;
+    font-size: 15px;
     /* font-family: "Courier Prime", monospace; */
     line-height: 22px;
 }
