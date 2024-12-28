@@ -1,6 +1,10 @@
+
+
 import { faHamburger } from '@fortawesome/free-solid-svg-icons';
 import './Header.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+
 
 function Header(){
     return (
@@ -21,6 +25,8 @@ function Header(){
                     <FontAwesomeIcon icon={faHamburger} className="hambuger-menu" />
                 </div>
             </div>
+
+            
         </div>
     )
 }

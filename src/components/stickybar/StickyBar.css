@@ -43,3 +43,30 @@
         left: -65px;
     }
 }
+
+
+@media only screen and (max-width:767px){
+    .sticky-icons{
+        position: fixed;
+        top: 8%;
+        left:65%;
+        gap: 20px; 
+        transform: rotate(90deg);
+    }
+
+    .sticky-icn-box{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        transform: rotate(-90deg);
+        margin-left:20px;
+    }
+
+    .stickyheading{
+        width: 100%;
+    }
+
+    .sticky-icons{
+        display:none;
+    }
+}

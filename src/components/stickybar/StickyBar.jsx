@@ -1,8 +1,11 @@
+
+
 import './StickyBar.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons/faGithub'
 import { faXTwitter } from '@fortawesome/free-brands-svg-icons/faXTwitter'
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons/faLinkedinIn'
+
 
 function StickyBar() {
   return (
