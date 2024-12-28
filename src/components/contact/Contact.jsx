@@ -1,4 +1,4 @@
-import axios from 'axios';
+import emailjs from '@emailjs/browser';
 import { useState, useEffect } from 'react';
 import './Contact.css'
 
@@ -11,23 +11,36 @@ function Contact() {
     const [mail, updateMail] = useState('');
     const [number, updateNumber] = useState('');
     const [message, updateMessage]= useState('');
+    const to_name ="Tapabrata";
 
-    const formData = {firstName, lastName, mail, number, message};
+    const formData = {to_name, firstName, lastName, mail, number, message};
+
     const onSubmit= async (e) =>{
         e.preventDefault();
-        // console.log(formData);
 
-        await axios.post('http://localhost:3000/mail-send', formData)
-        .then((response)=>{
-            response.status ? 
-                updatemailSendStatus(true)
-                : updatemailSendStatus(false);
-        })
-        .catch((error)=>{  
-            updatemailSendStatus(false)
-            updateError(error.message); 
-            // console.log(error.message);
+        emailjs.init({
+            publicKey: 'Fn6ef-SH3nFFPUxMR',
+            blockHeadless: true,
+            blockList: {
+                watchVariable: 'userEmail',
+            },
+            limitRate: {
+                id: 'app',
+                throttle: 10000,
+            },
         });
+        
+        emailjs.send('service_udpva7q', 'template_mi2h4tj', formData).then(
+            (response) => {
+                response.status ? 
+                    updatemailSendStatus(true)
+                        : updatemailSendStatus(false);
+            },
+            (error) => {
+                updatemailSendStatus(false)
+                updateError(error.message); 
+            },
+        );
     }
 
     return (
