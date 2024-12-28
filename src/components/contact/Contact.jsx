@@ -1,6 +1,32 @@
+import axios from 'axios';
+import { useState, useEffect } from 'react';
 import './Contact.css'
 
+
 function Contact() {
+    const [mailSendStatus, updatemailSendStatus] = useState(false);
+    const [error, updateError] = useState('');
+    const [firstName, updateFirstName] = useState('');
+    const [lastName, updateLastName]= useState('');
+    const [mail, updateMail] = useState('');
+    const [number, updateNumber] = useState('');
+    const [message, updateMessage]= useState('');
+
+    const formData = {firstName, lastName, mail, number, message};
+    const onSubmit= async (e) =>{
+        e.preventDefault();
+        console.log(formData);
+
+        await axios.post('/mailsend', formData)
+        .then((response)=>{
+            updatemailSendStatus(true);
+        })
+        .catch((error)=>{  
+            updateError(error.message); 
+            console.log(error.message);
+        });
+    }
+
     return (
         <div className="container my-5 pb-5" id="contact-me">
             <div className='row justify-content-center ml-100 get-in-touch-contaier'>
@@ -22,7 +48,7 @@ function Contact() {
                                         placeholder='First name*'
                                         className='form-control'
                                         // value={Fname}
-                                        //onChange={(e) => setFname(e.target.value)}
+                                        onChange={(e) => updateFirstName(e.target.value)}
                                     />
                                 </div>
 
@@ -33,7 +59,7 @@ function Contact() {
                                         type="text"
                                         placeholder='Last name*'
                                         className='form-control'
-                                        //onChange={(e) => setLname(e.target.value)}
+                                        onChange={(e) => updateLastName(e.target.value)}
                                     />
                                 </div>
                             </div>
@@ -43,23 +69,26 @@ function Contact() {
                                 type="email"
                                 className='form-control'
                                 placeholder='Email*'
-                                onChange={(e) => setEmail(e.target.value)}
+                                onChange={(e) => updateMail(e.target.value)}
                             />
                         </div>
                         <div className="from-group mt-2">
                             <input
-                                type="email"
+                                type="tel"
                                 className='form-control'
                                 placeholder='Contact number*'
-                                onChange={(e) => setEmail(e.target.value)}
+                                onChange={(e) => updateNumber(e.target.value)}
                             />
                         </div>
                         <div className='form-group mt-2'>
                             <textarea className="form-control" rows="5" 
-                            placeholder="Enter your message" onChange={(e) => setMsg(e.target.value)}></textarea>
+                            placeholder="Enter your message" onChange={(e) => updateMessage(e.target.value)}></textarea>
                         </div>
                         <div className='from-group'>
-                            <button className='btn btn-primary mt-2 contact-form-sbmit-button' onClick={(e) => submit(e)}>Submit</button>
+                            <button className='btn btn-primary mt-2 contact-form-sbmit-button' onClick={onSubmit} >Submit</button>
+                        </div>
+                        <div className='pt-2'>
+                            <p>{ mailSendStatus ? 'Message sent successfuly.' : error }</p>
                         </div>
                     </form>
                 </div>
