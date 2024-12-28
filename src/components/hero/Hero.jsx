@@ -1,12 +1,11 @@
 import './Hero.css'
-import tgImage from '../../assets/images/Tapabrata-preview.png'
 
 function Hero(){
     return(
         <div className="container hero-container">
             <div className="row align-items-center">
                 <div className="col-md-6">
-                    <img class="tapabrata-image" src={tgImage} alt="" />
+                    <img className="tapabrata-image" src="/images/Tapabrata-preview.png" alt="" />
                 </div>
                 <div className="col-md-6">
                     <h2 className='h1 hero-heading'>Hi, I'm <span className="separate-color">Tapabrata</span> 👋</h2>

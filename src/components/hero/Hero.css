@@ -41,6 +41,42 @@
     color: var(--yellow);
 }
 
+@media only screen and (max-width:1399px){
+    .hero-description{
+        font-size: 22px;
+    }
+
+    .resume-download-btn {
+        margin-top: 30px;
+        padding: 7px 26px;
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width:1199px){
+    .hero-heading{
+        font-size: 40px;
+    }
+    .hero-secondary-heading{
+        font-size: 25px;        
+    }
+    .hero-description{
+        font-size: 18px;
+    }
+
+    .resume-download-btn {
+        margin-top: 30px;
+        padding: 5px 17px;
+        font-size: 15px;
+    }
+
+    .tapabrata-image{
+        height: auto;
+        width: 430px;
+    }
+}
+
+
 @media only screen and (max-width:680px){
     .tapabrata-image{
         height: auto;

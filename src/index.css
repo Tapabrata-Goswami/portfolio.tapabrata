@@ -41,6 +41,12 @@ body{
     z-index: 111;
 }
 
+@media only screen and (max-width:1199px){
+    .page-heading {
+        font-size: 45px;
+    }
+}
+
 @media only screen and (max-width:767px){
     .mob-pd-t-1{
         padding-top: 10px;
@@ -68,5 +74,17 @@ body{
 
     #circularcursor {
         display: none;
+    }
+
+    .page-heading {
+        font-size: 40px;
+    }
+
+    .contact-heading {
+        font-size: 30px;
+        font-weight: 500;
+    }
+    .card-text {
+        font-size: 14px;
     }
 }
