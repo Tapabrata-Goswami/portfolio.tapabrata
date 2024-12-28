@@ -62,4 +62,8 @@
     .main-menu-col{
         display:none;
     }
+
+    .logo {
+        font-size: 55px;
+    }
 }

@@ -65,7 +65,7 @@ body{
 }
 
 @media only screen and (max-width:680px){
-    html,body{
+    /* html,body{
         cursor:default;
     }
     button,
@@ -75,7 +75,7 @@ body{
 
     #circularcursor {
         display: none;
-    }
+    } */
 
     .page-heading {
         font-size: 40px;

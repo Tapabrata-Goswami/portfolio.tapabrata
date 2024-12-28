@@ -15,15 +15,18 @@ function Contact() {
     const formData = {firstName, lastName, mail, number, message};
     const onSubmit= async (e) =>{
         e.preventDefault();
-        console.log(formData);
+        // console.log(formData);
 
-        await axios.post('/mailsend', formData)
+        await axios.post('http://localhost:3000/mail-send', formData)
         .then((response)=>{
-            updatemailSendStatus(true);
+            response.status ? 
+                updatemailSendStatus(true)
+                : updatemailSendStatus(false);
         })
         .catch((error)=>{  
+            updatemailSendStatus(false)
             updateError(error.message); 
-            console.log(error.message);
+            // console.log(error.message);
         });
     }
 
