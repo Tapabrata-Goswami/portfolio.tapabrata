@@ -4,8 +4,9 @@ import './Contact.css'
 
 
 function Contact() {
-    const [mailSendStatus, updatemailSendStatus] = useState(false);
+    const [mailSendStatus, updatemailSendStatus] = useState(null);
     const [error, updateError] = useState('');
+    const [loading, setLoading] = useState(false);
     const [firstName, updateFirstName] = useState('');
     const [lastName, updateLastName]= useState('');
     const [mail, updateMail] = useState('');
@@ -15,8 +16,17 @@ function Contact() {
 
     const formData = {to_name, firstName, lastName, mail, number, message};
 
+
+
     const onSubmit= async (e) =>{
         e.preventDefault();
+        setLoading(true);
+
+        updateFirstName('');
+        updateLastName('');
+        updateMail('');
+        updateNumber('');
+        updateMessage('');
 
         emailjs.init({
             publicKey: 'Fn6ef-SH3nFFPUxMR',
@@ -30,18 +40,30 @@ function Contact() {
             },
         });
         
-        emailjs.send('service_udpva7q', 'template_mi2h4tj', formData).then(
+        await emailjs.send('service_udpva7q', 'template_mi2h4tj', formData).then(
             (response) => {
+                setLoading(false)
                 response.status ? 
                     updatemailSendStatus(true)
                         : updatemailSendStatus(false);
             },
             (error) => {
+                setLoading(false)
                 updatemailSendStatus(false)
                 updateError(error.message); 
             },
         );
     }
+
+    useEffect(()=>{
+        setTimeout(()=>{
+            if(mailSendStatus){
+                updatemailSendStatus(null)
+            }else{
+                updatemailSendStatus(null)
+            }
+        },2000)
+    },[mailSendStatus]);
 
     return (
         <div className="container my-5 pb-5" id="contact-me">
@@ -63,7 +85,7 @@ function Contact() {
                                         type="text"
                                         placeholder='First name*'
                                         className='form-control'
-                                        // value={Fname}
+                                        value={firstName}
                                         onChange={(e) => updateFirstName(e.target.value)}
                                     />
                                 </div>
@@ -75,6 +97,7 @@ function Contact() {
                                         type="text"
                                         placeholder='Last name*'
                                         className='form-control'
+                                        value={lastName}
                                         onChange={(e) => updateLastName(e.target.value)}
                                     />
                                 </div>
@@ -85,6 +108,7 @@ function Contact() {
                                 type="email"
                                 className='form-control'
                                 placeholder='Email*'
+                                value={mail}
                                 onChange={(e) => updateMail(e.target.value)}
                             />
                         </div>
@@ -93,18 +117,27 @@ function Contact() {
                                 type="tel"
                                 className='form-control'
                                 placeholder='Contact number*'
+                                value={number}
                                 onChange={(e) => updateNumber(e.target.value)}
                             />
                         </div>
                         <div className='form-group mt-2'>
                             <textarea className="form-control" rows="5" 
+                            value={message}
                             placeholder="Enter your message" onChange={(e) => updateMessage(e.target.value)}></textarea>
                         </div>
                         <div className='from-group'>
-                            <button className='btn btn-primary mt-2 contact-form-sbmit-button' onClick={onSubmit} >Submit</button>
+                            <button className='btn btn-primary mt-2 contact-form-sbmit-button'  onClick={onSubmit} >{ loading ? 'Sending..' : 'Submit'}</button>
                         </div>
                         <div className='pt-2'>
-                            <p>{ mailSendStatus ? 'Message sent successfuly.' : error }</p>
+                            <p>
+                                { mailSendStatus !== null ?
+                                    mailSendStatus ? 
+                                        'Message sent successfuly.' 
+                                        : error
+                                :   ''
+                                }
+                            </p>
                         </div>
                     </form>
                 </div>
