@@ -42,4 +42,16 @@
     height: 40px;
     margin-top: 20px;
     margin-right: 20px;
+    background-color: #fff;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+@media only screen and ( max-width:767px){
+    .edu-subheading{
+        margin-bottom: 2px;
+    }
+    .edu-palce{
+        padding-bottom:10px ;
+    }
 }
