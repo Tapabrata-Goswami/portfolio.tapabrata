@@ -16,8 +16,6 @@ function Contact() {
 
     const formData = {to_name, firstName, lastName, mail, number, message};
 
-
-
     const onSubmit= async (e) =>{
         e.preventDefault();
         setLoading(true);
@@ -127,7 +125,7 @@ function Contact() {
                             placeholder="Enter your message" onChange={(e) => updateMessage(e.target.value)}></textarea>
                         </div>
                         <div className='from-group'>
-                            <button className='btn btn-primary mt-2 contact-form-sbmit-button'  onClick={onSubmit} >{ loading ? 'Sending..' : 'Submit'}</button>
+                            <button className='btn btn-primary mt-2 contact-form-sbmit-button' disabled={loading ? true : false } onClick={onSubmit} >{ loading ? 'Sending..' : 'Submit'}</button>
                         </div>
                         <div className='pt-2'>
                             <p>

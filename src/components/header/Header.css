@@ -66,4 +66,42 @@
     .logo {
         font-size: 55px;
     }
+
+    .logo-on-canvas{
+        font-size: 55px;
+        color: var(--white);
+        font-weight: 600;
+        background-color: var(--bg-black);
+        padding: 10px;
+        border-radius: 4px;
+        box-shadow: 8px 8px 0 var(--white);
+    }
+
+    .logo-dot-on-canvas{
+        color: var(--yellow);
+        font-size: 70px;
+        line-height: 0;
+    }
+
+    .Menu-bar-mob{
+        display: block;
+    }
+
+    .offcanvas{
+        background-color: var(--yellow);
+    }
+
+    .mobile-menu-items > li {
+        background-color: var(--bg-black);
+        padding: 16px 12px;
+        border-radius: 6px;
+        box-shadow: 4px 4px 0 var(--white);
+        margin-bottom: 20px;
+    }
+
+    .mobile-menu-items > li > a {
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+    }
 }
