@@ -85,7 +85,7 @@
 .content {
     padding: 20px 30px;
     position: relative;
-    border-radius: 5px;
+    border-radius: 4px;
 }
 
 .content > h2{
@@ -114,18 +114,6 @@
 .content > h2, .content > p, .content > .company-name, .content > .company-year{
     color: var(--bg-black);
 }
-
-
-/* .content:hover {
-    background-color: var(--yellow);
-    border: 2px solid var(--bg-black);
-    box-shadow: 8px 8px 2px var(--white);
-    transition: all 0.9s ease-in-out; 
-}
-.content:hover > h2, .content:hover > p, .content:hover > .company-name, .content:hover > .company-year{
-    color: var(--bg-black);
-} */
-
 
 .right{
     padding: 10px 0px 10px 40px;

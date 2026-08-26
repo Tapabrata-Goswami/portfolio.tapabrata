@@ -1,57 +1,90 @@
-.hashtag {
-    display: inline-block;
-    margin-left:3px ;
-    margin-right: 3px;
-    color: var(--yellow); /* or any color you prefer */
-    font-weight: bold; /* optional: make hashtags bold */
+.about-highlight{
+    color: var(--bg-black);
+    font-weight: 700;
+}
+
+.about-card{
+    background-color: var(--yellow);
+    border: 2px solid var(--bg-black);
+    border-radius: 4px;
+    padding: 28px;
+    box-shadow: 10px 10px 0px var(--white);
 }
 
 .about-me-content-p{
     font-size: 18px;
     letter-spacing: .5px;
-    color: var(--white);
+    color: var(--bg-black);
     line-height: 28px;
+    margin-bottom: 0;
 }
 
 .about-small-heading{
     color:var(--white);
 }
 
+.edu-card{
+    background-color: var(--yellow);
+    border: 2px solid var(--bg-black);
+    border-radius: 4px;
+    padding: 14px 20px;
+    margin-bottom: 16px;
+    box-shadow: 10px 10px 0px var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.edu-card:last-child{
+    margin-bottom: 0;
+}
+
 .education-heading{
     margin-bottom: 0;
     font-size: 18px;
     font-weight: 600;
-    color: var(--white);
+    color: var(--bg-black);
 }
 
 .edu-subheading{
     font-size: 14px;
     font-weight: 400;
     display: block;
-    margin-bottom: 20px;
-    color: var(--white);
+    color: var(--bg-black);
 }
 
 .edu-palce{
-    font-size: 15px;
-    font-weight: 400;
-    color: var(--white);
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--bg-black);
+}
+
+.skills-card{
+    background-color: var(--yellow);
+    border: 2px solid var(--bg-black);
+    border-radius: 4px;
+    padding: 20px 20px 4px 20px;
+    box-shadow: 10px 10px 0px var(--white);
 }
 
 .skill-icons{
     height: 40px;
-    margin-top: 20px;
-    margin-right: 20px;
+    margin-bottom: 16px;
+    margin-right: 16px;
     background-color: #fff;
     padding: 4px;
     border-radius: 4px;
 }
 
 @media only screen and ( max-width:767px){
-    .edu-subheading{
-        margin-bottom: 2px;
+    .about-card,
+    .skills-card{
+        padding: 20px;
+        box-shadow: 6px 6px 0 var(--white);
     }
-    .edu-palce{
-        padding-bottom:10px ;
+    .edu-card{
+        box-shadow: 5px 5px 0 var(--white);
     }
 }

@@ -16,11 +16,12 @@ function Header() {
                         <li className="menu-item"><a href="#about-me">About me</a></li>
                         <li className="menu-item"><a href="#experience">Experience</a></li>
                         <li className="menu-item"><a href="#portfolio">Portfolio</a></li>
+                        <li className="menu-item"><a href="#websites">Websites</a></li>
                         <li className="menu-item"><a href="#contact-me">Contact me</a></li>
                     </ul>
                 </div>
                 <div className="col-6 d-md-none text-end">
-                    <button className="btn btn-outline-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu">
+                    <button className="btn btn-outline-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu" aria-label="Open menu">
                         <FontAwesomeIcon icon={faBars} className="hamburger-menu" />
                     </button>
                 </div>
@@ -61,6 +62,11 @@ function Header() {
                         <li className="menu-item">
                             <a href="#portfolio" className="menu-link" data-bs-dismiss="offcanvas">
                                 Portfolio
+                            </a>
+                        </li>
+                        <li className="menu-item">
+                            <a href="#websites" className="menu-link" data-bs-dismiss="offcanvas">
+                                Websites
                             </a>
                         </li>
                         <li className="menu-item">

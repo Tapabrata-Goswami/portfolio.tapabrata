@@ -1,11 +1,10 @@
-/* .card{
-    width: 18rem;
-} */
+.portfolio-status-text{
+    color: var(--white);
+    font-size: 18px;
+    text-align: center;
+}
 
 .portfolio-card{
-    /* border: 2px solid var(--yellow);
-    background-color: transparent;
-    color: var(--white); */
     border-radius: 4px;
     background-color: var(--yellow);
     border: 2px solid var(--bg-black);
@@ -14,8 +13,6 @@
 
 .portfolio-githubbtn {
     font-size: 18px;
-    /* margin-top: 15px; */
-
 }
 
 .portfolio-githubbtn-icon{
@@ -26,7 +23,6 @@
     border: 2px solid var(--bg-black);
     border-radius: 50%;
     background-color: var(--bg-black);
-    /* padding-top: 10px; */
 }
 
 .portfolio-project-btn{
@@ -49,11 +45,9 @@
 
 .card-title{
     font-size: 23px;
-    /* font-family: "Courier Prime", monospace; */
 }
 
 .card-text{
     font-size: 15px;
-    /* font-family: "Courier Prime", monospace; */
     line-height: 22px;
 }

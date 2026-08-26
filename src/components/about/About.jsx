@@ -10,7 +10,9 @@ function About() {
                     <h4 className='about-small-heading'>About my self</h4>
                 </div>
                 <div className='col-md-6'>
-                    <p className='about-me-content-p'>🚀 MERN stack maestro with over 3 years of coding excellence! 💻 Seamlessly blending expertise in React, Express, Node.js, and MongoDB to craft dynamic web solutions. 🌟 Fluent in the art of Laravel PHP, delivering robust backend magic. Let's turn your digital dreams into reality! 🌐 <span className='hashtag '>#MERNStack</span><span className='hashtag'>#Laravel</span><span className='hashtag'>#PHP</span><span className='hashtag'>#WebDevelopment</span></p>
+                    <div className='about-card'>
+                        <p className='about-me-content-p'>Full-Stack Engineer with 3+ years of experience building production web applications. Currently at <span className='about-highlight'>CodeClouds</span>, working across React/Next.js front ends and Node.js, Laravel &amp; WordPress back ends. Experienced with MongoDB, MySQL, AWS deployments, and Shopify/WooCommerce storefronts. I focus on clean, maintainable code and attention to UX detail.</p>
+                    </div>
                 </div>
             </div>
 
@@ -19,30 +21,30 @@ function About() {
                     <h4 className='about-small-heading'>Education</h4>
                 </div>
                 <div className='col-md-6'>
-                    <div className='row'>
-                        <div className='col-md-8'>
+                    <div className='edu-card'>
+                        <div>
                             <h6 className='education-heading'>Future Institute of Technology</h6>
                             <span className='edu-subheading'>Btech in CSE</span>
                         </div>
-                        <div className='col-md-4 edu-palce'>
+                        <div className='edu-palce'>
                             Kolkata, India
                         </div>
                     </div>
-                    <div className='row'>
-                        <div className='col-md-8'>
+                    <div className='edu-card'>
+                        <div>
                             <h6 className='education-heading'>Siliguri Netaji School</h6>
                             <span className='edu-subheading'>Higher Secondary</span>
                         </div>
-                        <div className='col-md-4 edu-palce'>
+                        <div className='edu-palce'>
                             Siliguri, India
                         </div>
                     </div>
-                    <div className='row'>
-                        <div className='col-md-8'>
+                    <div className='edu-card'>
+                        <div>
                             <h6 className='education-heading'>Siliguri Boys' High School</h6>
                             <span className='edu-subheading'>Madhaymik</span>
                         </div>
-                        <div className='col-md-4 edu-palce'>
+                        <div className='edu-palce'>
                             Siliguri, India
                         </div>
                     </div>
@@ -54,29 +56,30 @@ function About() {
                     <h4 className='about-small-heading'>Skills</h4>
                 </div>
                 <div className='col-md-6'>
+                    <div className='skills-card'>
                     <img
                         src="https://hire.codeclouds.com/_next/image/?url=https%3A%2F%2Fmedia.codeclouds.com%2Fsmall%2Ficon_javascript.png&w=48&q=75"
-                        alt=""
+                        alt="JavaScript"
                         className='skill-icons' />
                     <img
                         src="https://hire.codeclouds.com/_next/image/?url=https%3A%2F%2Fmedia.codeclouds.com%2Fsmall%2Ficon_typescript.png&w=48&q=75"
-                        alt=""
+                        alt="TypeScript"
                         className='skill-icons' />
                     <img
                         src="https://hire.codeclouds.com/_next/image/?url=https%3A%2F%2Fmedia.codeclouds.com%2Fsmall%2Ficon_react.png&w=48&q=75"
-                        alt=""
+                        alt="React"
                         className='skill-icons' />
                     <img
                         src="https://hire.codeclouds.com/_next/image/?url=https%3A%2F%2Fmedia.codeclouds.com%2Fxlarge%2Fbootstrap-4.svg&w=48&q=75"
-                        alt=""
+                        alt="Bootstrap"
                         className='skill-icons' />
                     <img
                         src="https://hire.codeclouds.com/_next/image/?url=https%3A%2F%2Fmedia.codeclouds.com%2Fxsmall%2Ficon-figma.svg&w=48&q=75"
-                        alt=""
+                        alt="Figma"
                         className='skill-icons' />
                     <img
                         src="https://hire.codeclouds.com/_next/image/?url=https%3A%2F%2Fmedia.codeclouds.com%2Fxsmall%2Ficon-nextjs.svg&w=48&q=75"
-                        alt=""
+                        alt="Next.js"
                         className='skill-icons' />
 
                     <img src="https://hire.codeclouds.com/_next/image/?url=https%3A%2F%2Fmedia.codeclouds.com%2Fxsmall%2Ficon-nuxtjs.svg&w=48&q=75" alt="Nuxt.js" className="skill-icons" />
@@ -106,7 +109,7 @@ function About() {
                     <img src="https://hire.codeclouds.com/_next/image/?url=https%3A%2F%2Fmedia.codeclouds.com%2Fsmall%2Ficon_shopify.png&w=48&q=75" alt="Shopify" className="skill-icons" />
                     <img src="https://hire.codeclouds.com/_next/image/?url=https%3A%2F%2Fmedia.codeclouds.com%2Fxsmall%2Ficon-konnektive.svg&w=48&q=75" alt="Konnektive" className="skill-icons" />
                     <img src="https://hire.codeclouds.com/_next/image/?url=https%3A%2F%2Fmedia.codeclouds.com%2Fsmall%2Ficon_woocommerce.png&w=48&q=75" alt="WooCommerce" className="skill-icons" />
-
+                    </div>
                 </div>
             </div>
 

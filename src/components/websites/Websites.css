@@ -1,0 +1,107 @@
+.websites-tabs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+.websites-tab-btn{
+    background-color: transparent;
+    color: var(--white);
+    border: 2px solid var(--yellow);
+    border-radius: 30px;
+    padding: 8px 22px;
+    font-size: 15px;
+    font-family: "Courier Prime", monospace;
+}
+
+.websites-tab-btn.active{
+    background-color: var(--yellow);
+    color: var(--bg-black);
+}
+
+.websites-slider{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.websites-nav-btn{
+    flex-shrink: 0;
+    background-color: var(--yellow);
+    color: var(--bg-black);
+    border: 2px solid var(--bg-black);
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    font-size: 18px;
+}
+
+.websites-nav-btn:hover{
+    box-shadow: 3px 3px 0 var(--white);
+}
+
+.websites-card{
+    flex: 1;
+    min-width: 0;
+    background-color: var(--yellow);
+    border: 2px solid var(--bg-black);
+    border-radius: 4px;
+    box-shadow: 10px 10px 0px var(--white);
+    overflow: hidden;
+}
+
+.websites-card-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 12px 20px;
+    border-bottom: 2px solid var(--bg-black);
+}
+
+.websites-card-label{
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--bg-black);
+}
+
+.websites-visit-link{
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--bg-black);
+    text-decoration: none;
+}
+
+.websites-visit-link:hover{
+    text-decoration: underline;
+}
+
+.websites-iframe{
+    width: 100%;
+    height: 600px;
+    border: none;
+    display: block;
+    background-color: var(--white);
+}
+
+.websites-counter{
+    text-align: center;
+    color: var(--white);
+    margin-top: 16px;
+    margin-bottom: 0;
+    font-family: "Source Code Pro", monospace;
+}
+
+@media only screen and (max-width:767px){
+    .websites-iframe{
+        height: 400px;
+    }
+    .websites-nav-btn{
+        width: 36px;
+        height: 36px;
+        font-size: 15px;
+    }
+}

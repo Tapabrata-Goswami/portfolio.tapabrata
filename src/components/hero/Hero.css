@@ -1,5 +1,6 @@
 .hero-container{
     margin-top: 40px;
+    margin-bottom: 48px;
 }
 
 .hero-heading{
@@ -24,7 +25,16 @@
     color: var(--white);
     font-family: "Source Code Pro", monospace;
     padding: 0;
-    margin-bottom:6px;
+    margin-bottom:14px;
+    display: flex;
+    align-items: center;
+}
+
+.hero-description-icon{
+    color: var(--yellow);
+    width: 0.85em;
+    margin-right: 16px;
+    flex-shrink: 0;
 }
 
 .resume-download-btn{
