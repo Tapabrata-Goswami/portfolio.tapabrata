@@ -7,15 +7,16 @@ import Portfolio from "./components/portfolio/Portfolio";
 import Websites from "./components/websites/Websites";
 import Contact from "./components/contact/Contact";
 import StickyBar from "./components/stickybar/StickyBar";
+import Cursor from "./components/cursor/Cursor";
 
 function App(){
     return(
         <div className="container-fluid pb-5">
+            <Cursor />
             <Header />
             <Hero />
             <Heading data={{title:'About me'}} />
             <About />
-            <Heading data={{title:'Experience'}} />
             <Experience />
             <Heading data={{title:'Portfolio'}} />
             <Portfolio />

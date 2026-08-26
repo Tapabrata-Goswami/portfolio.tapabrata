@@ -79,10 +79,11 @@
     text-decoration: underline;
 }
 
-.websites-iframe{
+.websites-preview-img{
     width: 100%;
     height: 600px;
-    border: none;
+    object-fit: cover;
+    object-position: top;
     display: block;
     background-color: var(--white);
 }
@@ -96,7 +97,7 @@
 }
 
 @media only screen and (max-width:767px){
-    .websites-iframe{
+    .websites-preview-img{
         height: 400px;
     }
     .websites-nav-btn{

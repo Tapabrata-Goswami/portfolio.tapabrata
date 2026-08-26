@@ -37,31 +37,53 @@
     flex-shrink: 0;
 }
 
-.resume-download-btn{
-    margin-top: 30px;
-    padding:10px 30px;
-    font-size: 18px;
-    background-color: var(--yellow);
-    border: 2px solid var(--bg-black);
-    border-radius: 4px;
+.hero-social-links{
+    display: flex;
+    gap: 16px;
+    margin-top: 40px;
 }
 
-.resume-download-btn:hover{
+.hero-resume-btn{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 44px;
+    padding: 0 22px;
+    font-size: 16px;
+    font-family: "Source Code Pro", monospace;
+    color: var(--bg-black);
+    background-color: var(--yellow);
+    border: 2px solid var(--bg-black);
+    border-radius: 30px;
+}
+
+.hero-resume-btn:hover{
+    box-shadow: 3px 3px 0 var(--white);
+}
+
+.hero-icon-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    font-size: 20px;
+    color: var(--white);
+    background-color: transparent;
+    border: 2px solid var(--white);
+    border-radius: 50%;
+}
+
+.hero-icon-btn:hover{
     background-color: var(--yellow);
     color: var(--bg-black);
-    border: 2px solid var(--bg-black);
-    box-shadow: 4px 4px 0 var(--white);
+    border-color: var(--bg-black);
+    box-shadow: 3px 3px 0 var(--white);
 }
 
 @media only screen and (max-width:1399px){
     .hero-description{
         font-size: 22px;
-    }
-
-    .resume-download-btn {
-        margin-top: 30px;
-        padding: 7px 26px;
-        font-size: 16px;
     }
 }
 
@@ -74,12 +96,6 @@
     }
     .hero-description{
         font-size: 18px;
-    }
-
-    .resume-download-btn {
-        margin-top: 30px;
-        padding: 5px 17px;
-        font-size: 15px;
     }
 
     .tapabrata-image{
@@ -97,11 +113,5 @@
 
     .hero-heading {
         font-size: 32px;
-    }
-
-    .resume-download-btn {
-        margin-top: 30px;
-        padding: 12px 26px !important;
-        font-size: 18px;
     }
 }

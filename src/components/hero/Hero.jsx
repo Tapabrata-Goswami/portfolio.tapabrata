@@ -1,6 +1,9 @@
 import './Hero.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLocationDot, faCodeBranch, faBriefcase } from '@fortawesome/free-solid-svg-icons'
+import { faLocationDot, faCodeBranch, faBriefcase, faDownload } from '@fortawesome/free-solid-svg-icons'
+import { faGithub } from '@fortawesome/free-brands-svg-icons/faGithub'
+import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons/faLinkedinIn'
+import { faUpwork } from '@fortawesome/free-brands-svg-icons/faUpwork'
 
 function Hero(){
     return(
@@ -17,7 +20,12 @@ function Hero(){
                         <p className='hero-description'><FontAwesomeIcon className='hero-description-icon' icon={faCodeBranch} /> Open Source Enthusiast</p>
                         <p className='hero-description'><FontAwesomeIcon className='hero-description-icon' icon={faBriefcase} /> Web Engineer at CodeClouds</p>
                     </div>
-                    <a className='btn resume-download-btn' href="/Tapabrata's_Resume.pdf" download>Download Resume</a>
+                    <div className='hero-social-links'>
+                        <a className='hero-resume-btn' href="/Tapabrata's_Resume.pdf" download><FontAwesomeIcon icon={faDownload} /> Resume</a>
+                        <a className='hero-icon-btn' href="https://github.com/Tapabrata-Goswami" target="_blank" rel="noreferrer" aria-label="GitHub"><FontAwesomeIcon icon={faGithub} /></a>
+                        <a className='hero-icon-btn' href="https://www.linkedin.com/in/tapabrata-goswami/" target="_blank" rel="noreferrer" aria-label="LinkedIn"><FontAwesomeIcon icon={faLinkedinIn} /></a>
+                        <a className='hero-icon-btn' href="https://www.upwork.com/freelancers/~0179458da42d782d1f" target="_blank" rel="noreferrer" aria-label="Upwork"><FontAwesomeIcon icon={faUpwork} /></a>
+                    </div>
                 </div>
             </div>
         </div>

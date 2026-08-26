@@ -1,10 +1,16 @@
 import emailjs from '@emailjs/browser';
 import { useState, useEffect, useRef } from 'react';
 import './Contact.css'
+import useScrollReveal from '../../hooks/useScrollReveal'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub } from '@fortawesome/free-brands-svg-icons/faGithub'
+import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons/faLinkedinIn'
+import { faUpwork } from '@fortawesome/free-brands-svg-icons/faUpwork'
 
 const MIN_FILL_TIME_MS = 3000;
 
 function Contact() {
+    const reveal = useScrollReveal();
     const [mailSendStatus, updatemailSendStatus] = useState(null);
     const [error, updateError] = useState('');
     const [loading, setLoading] = useState(false);
@@ -76,13 +82,19 @@ function Contact() {
     },[mailSendStatus]);
 
     return (
-        <div className="container my-5" id="contact-me">
+        <div className="container my-5" id="contact-me" ref={reveal}>
             <div className='row justify-content-center ml-100 get-in-touch-contaier'>
                 <div className='col-md-6 d-flex align-items-center'>
                     <div className='mob-pd-b-2'>
                         <h6 className='contact-heading pb-3'>Get in touch</h6>
                         <p className='get-in-touch-info'><b>Email:</b> tapabratagoswami21@gmail.com</p>
                         <p className='get-in-touch-info'><b>Phone:</b> +91 86378 15595</p>
+                        <p className='get-in-touch-funny'>P.S. I reply faster than my code compiles. ⚡</p>
+                        <div className='get-in-touch-social'>
+                            <a className='contact-icon-btn' href="https://github.com/Tapabrata-Goswami" target="_blank" rel="noreferrer" aria-label="GitHub"><FontAwesomeIcon icon={faGithub} /></a>
+                            <a className='contact-icon-btn' href="https://www.linkedin.com/in/tapabrata-goswami/" target="_blank" rel="noreferrer" aria-label="LinkedIn"><FontAwesomeIcon icon={faLinkedinIn} /></a>
+                            <a className='contact-icon-btn' href="https://www.upwork.com/freelancers/~0179458da42d782d1f" target="_blank" rel="noreferrer" aria-label="Upwork"><FontAwesomeIcon icon={faUpwork} /></a>
+                        </div>
                     </div>
 
                 </div>

@@ -1,8 +1,10 @@
 import './About.css'
+import useScrollReveal from '../../hooks/useScrollReveal'
 
 function About() {
+    const reveal = useScrollReveal();
     return (
-        <div className='container my-5' id="about-me">
+        <div className='container my-5' id="about-me" ref={reveal}>
 
 
             <div className='row d-flex justify-content-center'>

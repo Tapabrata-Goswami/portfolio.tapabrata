@@ -1,6 +1,17 @@
+.experience-stage {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.timeline-window {
+    flex: 1;
+    overflow: hidden;
+    position: relative;
+}
+
 .timeline {
     position: relative;
-    
 }
 
 /* The actual timeline (the vertical ruler) */
@@ -125,6 +136,10 @@
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
 @media screen and (max-width: 600px) {
+
+    .experience-stage {
+        height: 80vh;
+    }
 
     /* Place the timelime to the left */
     .timeline::after {

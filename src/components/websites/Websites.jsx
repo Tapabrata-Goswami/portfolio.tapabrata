@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './Websites.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowUpRightFromSquare, faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons'
+import useScrollReveal from '../../hooks/useScrollReveal'
 
 const toSite = (url) => ({ url, label: new URL(url).hostname.replace(/^www\./, '') })
 
@@ -65,6 +66,7 @@ const WEBSITE_CATEGORIES = {
 const CATEGORIES = Object.keys(WEBSITE_CATEGORIES)
 
 function Websites() {
+    const reveal = useScrollReveal();
     const [activeCategory, updateActiveCategory] = useState(CATEGORIES[0])
     const [activeIndex, updateActiveIndex] = useState(0)
 
@@ -80,7 +82,7 @@ function Websites() {
     const goNext = () => updateActiveIndex((i) => (i === sites.length - 1 ? 0 : i + 1))
 
     return (
-        <div className="container my-5" id="websites">
+        <div className="container my-5" id="websites" ref={reveal}>
             <div className="websites-tabs">
                 {CATEGORIES.map((category) => (
                     <button
@@ -106,12 +108,12 @@ function Websites() {
                             Visit site <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
                         </a>
                     </div>
-                    <iframe
+                    <img
                         key={activeSite.url}
-                        src={activeSite.url}
-                        title={activeSite.label}
+                        src={`https://s.wordpress.com/mshots/v1/${encodeURIComponent(activeSite.url)}?w=1200&h=800`}
+                        alt={`${activeSite.label} preview`}
                         loading="lazy"
-                        className="websites-iframe"
+                        className="websites-preview-img"
                     />
                 </div>
 

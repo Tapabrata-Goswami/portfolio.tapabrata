@@ -51,3 +51,27 @@
     font-size: 15px;
     line-height: 22px;
 }
+
+.portfolio-pagination{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.portfolio-page-btn{
+    background-color: transparent;
+    color: var(--white);
+    border: 2px solid var(--yellow);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-family: "Courier Prime", monospace;
+    font-size: 15px;
+}
+
+.portfolio-page-btn.active{
+    background-color: var(--yellow);
+    color: var(--bg-black);
+}

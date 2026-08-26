@@ -1,0 +1,33 @@
+.custom-cursor{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    margin-top: -12px;
+    margin-left: -12px;
+    background-color: var(--yellow);
+    border: 2px solid var(--white);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+    transform: translate3d(-100px, -100px, 0);
+    transition: width 0.2s ease, height 0.2s ease, margin 0.2s ease, background-color 0.2s ease;
+}
+
+.custom-cursor.cursor-hover{
+    width: 44px;
+    height: 44px;
+    margin-top: -22px;
+    margin-left: -22px;
+    background-color: transparent;
+    border-color: var(--yellow);
+}
+
+body.custom-cursor-active,
+body.custom-cursor-active a,
+body.custom-cursor-active button,
+body.custom-cursor-active input,
+body.custom-cursor-active textarea {
+    cursor: none;
+}
