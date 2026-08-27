@@ -5,10 +5,17 @@
 }
 
 .portfolio-card{
-    border-radius: 4px;
-    background-color: var(--yellow);
-    border: 2px solid var(--bg-black);
-    box-shadow: 10px 10px 0px var(--white);
+    border-radius: 8px;
+    background-color: #2a2a2a;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-left: 3px solid var(--yellow);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.portfolio-card:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
 }
 
 .portfolio-githubbtn {
@@ -19,37 +26,38 @@
     font-size: 32px;
     margin-left: 20px;
     position: absolute;
-    color: var(--white);
-    border: 2px solid var(--bg-black);
+    color: var(--bg-black);
+    border: none;
     border-radius: 50%;
-    background-color: var(--bg-black);
+    background-color: var(--yellow);
 }
 
 .portfolio-project-btn{
-    border-radius: 3px;
+    border-radius: 30px;
     background-color: transparent;
-    color: var(--bg-black);
-    border: 2px solid var(--bg-black);
+    color: var(--yellow);
+    border: 2px solid var(--yellow);
     font-family: "Courier Prime", monospace;
     outline: none;
 }
 
 .portfolio-project-btn:hover{
-    color: var(--white);
+    color: var(--bg-black);
     outline: none;
-    border: 2px solid var(--bg-black);
-    background-color: var(--bg-black);
-    box-shadow: 3px 3px 2px var(--white);
+    border: 2px solid var(--yellow);
+    background-color: var(--yellow);
     transition: 0.3s;
 }
 
 .card-title{
     font-size: 23px;
+    color: var(--white);
 }
 
 .card-text{
     font-size: 15px;
     line-height: 22px;
+    color: rgba(255, 255, 255, 0.65);
 }
 
 .portfolio-pagination{

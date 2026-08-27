@@ -120,12 +120,19 @@
 }
 
 .content {
-    background-color: var(--yellow);
-    border: 2px solid var(--bg-black);
-    box-shadow: 10px 10px 0px var(--white);
+    background-color: #2a2a2a;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
 }
-.content > h2, .content > p, .content > .company-name, .content > .company-year{
-    color: var(--bg-black);
+.content > h2, .content > p{
+    color: var(--white);
+}
+.content > .company-name{
+    color: var(--yellow);
+    font-weight: 600;
+}
+.content > .company-year{
+    color: rgba(255, 255, 255, 0.55);
 }
 
 .right{

@@ -99,7 +99,7 @@ function Contact() {
 
                 </div>
                 <div className="col-md-6">
-                    <form className='p-3 contact-me-form-container'>
+                    <form className='p-4 contact-me-form-container'>
                         <div className='honeypot-field' aria-hidden="true">
                             <label htmlFor="website">Leave this field empty</label>
                             <input
@@ -112,12 +112,14 @@ function Contact() {
                                 onChange={(e) => updateWebsite(e.target.value)}
                             />
                         </div>
-                        <div className='row'>
+                        <div className='row g-3'>
                             <div className='col-md-6'>
                                 <div className='form-group'>
+                                    <label className='form-label' htmlFor="firstName">First name<span className='required-asterisk'>*</span></label>
                                     <input
+                                        id="firstName"
                                         type="text"
-                                        placeholder='First name*'
+                                        placeholder='Your first name'
                                         aria-label='First name'
                                         className='form-control'
                                         value={firstName}
@@ -126,11 +128,13 @@ function Contact() {
                                 </div>
 
                             </div>
-                            <div className='col-md-6 mob-pd-t-1'>
+                            <div className='col-md-6'>
                                 <div className='form-group'>
+                                    <label className='form-label' htmlFor="lastName">Last name<span className='required-asterisk'>*</span></label>
                                     <input
+                                        id="lastName"
                                         type="text"
-                                        placeholder='Last name*'
+                                        placeholder='Your last name'
                                         aria-label='Last name'
                                         className='form-control'
                                         value={lastName}
@@ -139,38 +143,43 @@ function Contact() {
                                 </div>
                             </div>
                         </div>
-                        <div className="from-group mt-2">
+                        <div className="form-group mt-3">
+                            <label className='form-label' htmlFor="email">Email<span className='required-asterisk'>*</span></label>
                             <input
+                                id="email"
                                 type="email"
                                 className='form-control'
-                                placeholder='Email*'
+                                placeholder='you@example.com'
                                 aria-label='Email'
                                 value={mail}
                                 onChange={(e) => updateMail(e.target.value)}
                             />
                         </div>
-                        <div className="from-group mt-2">
+                        <div className="form-group mt-3">
+                            <label className='form-label' htmlFor="phone">Contact number<span className='required-asterisk'>*</span></label>
                             <input
+                                id="phone"
                                 type="tel"
                                 className='form-control'
-                                placeholder='Contact number*'
+                                placeholder='+1 234 567 8900'
                                 aria-label='Contact number'
                                 value={number}
                                 onChange={(e) => updateNumber(e.target.value)}
                             />
                         </div>
-                        <div className='form-group mt-2'>
-                            <textarea className="form-control" rows="5"
+                        <div className='form-group mt-3'>
+                            <label className='form-label' htmlFor="message">Message</label>
+                            <textarea id="message" className="form-control" rows="5"
                             value={message}
-                            placeholder="Enter your message" aria-label="Message" onChange={(e) => updateMessage(e.target.value)}></textarea>
+                            placeholder="Tell me a bit about your project..." aria-label="Message" onChange={(e) => updateMessage(e.target.value)}></textarea>
                         </div>
-                        <div className='from-group'>
-                            <button className='btn btn-primary mt-2 contact-form-sbmit-button' disabled={loading ? true : false } onClick={onSubmit} >{ loading ? 'Sending..' : 'Submit'}</button>
+                        <div className='mt-3'>
+                            <button className='btn btn-primary contact-form-sbmit-button' disabled={loading ? true : false } onClick={onSubmit} >{ loading ? 'Sending..' : 'Submit'}</button>
                         </div>
                         <div className='pt-2'>
-                            <p>
+                            <p className='contact-form-status'>
                                 { mailSendStatus !== null ?
-                                    mailSendStatus ? 
+                                    mailSendStatus ?
                                         'Message sent successfully.'
                                         : error
                                 :   ''

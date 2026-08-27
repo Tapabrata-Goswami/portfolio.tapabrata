@@ -31,7 +31,7 @@
     flex-shrink: 0;
     background-color: var(--yellow);
     color: var(--bg-black);
-    border: 2px solid var(--bg-black);
+    border: none;
     border-radius: 50%;
     width: 44px;
     height: 44px;
@@ -39,16 +39,17 @@
 }
 
 .websites-nav-btn:hover{
-    box-shadow: 3px 3px 0 var(--white);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
 }
 
 .websites-card{
     flex: 1;
     min-width: 0;
-    background-color: var(--yellow);
-    border: 2px solid var(--bg-black);
-    border-radius: 4px;
-    box-shadow: 10px 10px 0px var(--white);
+    background-color: #2a2a2a;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-left: 3px solid var(--yellow);
+    border-radius: 8px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
     overflow: hidden;
 }
 
@@ -59,19 +60,19 @@
     flex-wrap: wrap;
     gap: 8px;
     padding: 12px 20px;
-    border-bottom: 2px solid var(--bg-black);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .websites-card-label{
     font-size: 16px;
     font-weight: 600;
-    color: var(--bg-black);
+    color: var(--white);
 }
 
 .websites-visit-link{
     font-size: 14px;
     font-weight: 600;
-    color: var(--bg-black);
+    color: var(--yellow);
     text-decoration: none;
 }
 
