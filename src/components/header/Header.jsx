@@ -1,4 +1,4 @@
-import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faCodeBranch } from '@fortawesome/free-solid-svg-icons';
 import './Header.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -18,6 +18,7 @@ function Header() {
                         <li className="menu-item"><a href="#portfolio">Portfolio</a></li>
                         <li className="menu-item"><a href="#websites">Websites</a></li>
                         <li className="menu-item"><a href="#contact-me">Contact me</a></li>
+                        <li className="fork-menu-item"><a href="https://github.com/Tapabrata-Goswami/portfolio.tapabrata/fork" target="_blank" rel="noreferrer" className="fork-btn"><FontAwesomeIcon icon={faCodeBranch} /> Fork</a></li>
                     </ul>
                 </div>
                 <div className="col-6 d-md-none text-end">
@@ -72,6 +73,11 @@ function Header() {
                         <li className="menu-item">
                             <a href="#contact-me" className="menu-link" data-bs-dismiss="offcanvas">
                                 Contact me
+                            </a>
+                        </li>
+                        <li className="menu-item">
+                            <a href="https://github.com/Tapabrata-Goswami/portfolio.tapabrata/fork" target="_blank" rel="noreferrer" className="menu-link" data-bs-dismiss="offcanvas">
+                                <FontAwesomeIcon icon={faCodeBranch} /> Fork
                             </a>
                         </li>
                     </ul>

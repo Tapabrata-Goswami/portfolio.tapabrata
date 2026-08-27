@@ -11,7 +11,7 @@
 
 .main-menu-items{
     height: 100%;
-    gap: 80px;
+    gap: 40px;
 }
 
 .main-menu-items > .menu-item > a{
@@ -44,6 +44,23 @@
 
 .Menu-bar-mob{
     display: none;
+}
+
+.fork-btn{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--bg-black) !important;
+    background-color: var(--yellow);
+    padding: 8px 16px;
+    border-radius: 30px;
+    border: 2px solid var(--bg-black);
+    text-decoration: none;
+}
+
+.fork-btn:hover{
+    box-shadow: 3px 3px 0 var(--white);
+    color: var(--bg-black) !important;
 }
 
 .hambuger-menu{

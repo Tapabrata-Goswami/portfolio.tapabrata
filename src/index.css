@@ -31,6 +31,22 @@ body{
     margin-bottom: 200px;
 }
 
+.made-with-love{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    margin-top: 40px;
+    color: var(--white);
+    font-family: "Source Code Pro", monospace;
+    font-size: 14px;
+    text-align: center;
+}
+
+.made-with-love-icon{
+    color: var(--yellow);
+}
+
 @media only screen and (max-width:1199px){
     .page-heading {
         font-size: 45px;

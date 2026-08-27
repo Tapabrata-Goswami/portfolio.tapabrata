@@ -8,6 +8,8 @@ import Websites from "./components/websites/Websites";
 import Contact from "./components/contact/Contact";
 import StickyBar from "./components/stickybar/StickyBar";
 import Cursor from "./components/cursor/Cursor";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHeart } from "@fortawesome/free-solid-svg-icons";
 
 function App(){
     return(
@@ -25,6 +27,9 @@ function App(){
             <Heading data={{title:'Contact me'}} />
             <Contact />
             <StickyBar />
+            <div className="made-with-love">
+                Made with <FontAwesomeIcon icon={faHeart} className="made-with-love-icon" /> by Tapabrata
+            </div>
         </div>
     )
 }

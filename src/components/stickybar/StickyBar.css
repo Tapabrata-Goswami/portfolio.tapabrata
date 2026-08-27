@@ -2,11 +2,12 @@
 .sticky-icons{
     position: fixed;
     top: 45%;
-    left: -40px;
+    left: -60px;
     display: flex;
     align-items: center;
-    gap: 30px; 
+    gap: 30px;
     transform: rotate(-90deg);
+    z-index: -1;
 }
 
 .sticky-icn-box{

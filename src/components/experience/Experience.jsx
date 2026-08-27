@@ -24,8 +24,6 @@ function Experience(){
 
             if (scrollDistance() <= 0 || boxes.length === 0) return;
 
-            gsap.set(boxes, { opacity: 0 });
-
             const tl = gsap.timeline({
                 scrollTrigger: {
                     trigger: stage,
@@ -38,15 +36,6 @@ function Experience(){
             });
 
             tl.to(inner, { y: () => -scrollDistance(), ease: 'none', duration: boxes.length }, 0);
-
-            boxes.forEach((box, i) => {
-                const fromLeft = box.classList.contains('left');
-                tl.fromTo(box,
-                    { opacity: 0, x: fromLeft ? -80 : 80 },
-                    { opacity: 1, x: 0, ease: 'power2.out', duration: 1 },
-                    i
-                );
-            });
         }, stageRef);
 
         return () => ctx.revert();

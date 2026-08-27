@@ -55,6 +55,7 @@
     background-color: var(--yellow);
     border: 2px solid var(--bg-black);
     border-radius: 30px;
+    text-decoration: none;
 }
 
 .hero-resume-btn:hover{

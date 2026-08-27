@@ -8,8 +8,9 @@ function About() {
 
 
             <div className='row d-flex justify-content-center'>
-                <div className='col-md-6 d-flex align-items-center'>
+                <div className='col-md-6 d-flex flex-column justify-content-center'>
                     <h4 className='about-small-heading'>About my self</h4>
+                    <p className='about-tagline'>Turning coffee into commits since day one. <span className='tagline-emoji'>☕</span></p>
                 </div>
                 <div className='col-md-6'>
                     <div className='about-card'>
@@ -19,8 +20,9 @@ function About() {
             </div>
 
             <div className='row mt-5 d-flex justify-content-center'>
-                <div className='col-md-6 d-flex align-items-center'>
+                <div className='col-md-6 d-flex flex-column justify-content-center'>
                     <h4 className='about-small-heading'>Education</h4>
+                    <p className='about-tagline'>Proof I once sat exams instead of Stack Overflow. <span className='tagline-emoji'>🎓</span></p>
                 </div>
                 <div className='col-md-6'>
                     <div className='edu-card'>
@@ -54,8 +56,9 @@ function About() {
             </div>
 
             <div className='row mt-5 d-flex justify-content-center'>
-                <div className='col-md-6 d-flex align-items-center'>
+                <div className='col-md-6 d-flex flex-column justify-content-center'>
                     <h4 className='about-small-heading'>Skills</h4>
+                    <p className='about-tagline'>Google is technically one of them. <span className='tagline-emoji'>🔍</span></p>
                 </div>
                 <div className='col-md-6'>
                     <div className='skills-card'>

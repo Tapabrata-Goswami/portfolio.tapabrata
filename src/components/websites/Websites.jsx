@@ -29,8 +29,6 @@ const WEBSITE_CATEGORIES = {
         'https://thecreativenext.com/dev/yellowstone/',
         'https://thecreativenext.com/dev/advancedesigncontractors/',
         'https://thecreativenext.com/dev/instantcontactbpo/',
-    ].map(toSite),
-    Truck: [
         'https://thecreativenext.com/dev/ibsta/',
     ].map(toSite),
     Food: [
