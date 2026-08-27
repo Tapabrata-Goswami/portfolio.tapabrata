@@ -7,7 +7,8 @@ function Cursor(){
 
     useEffect(() => {
         const isFinePointer = window.matchMedia('(pointer: fine)').matches;
-        if (!isFinePointer) return;
+        const isMobileViewport = window.matchMedia('(max-width: 767px)').matches;
+        if (!isFinePointer || isMobileViewport) return;
 
         const cursor = cursorRef.current;
         document.body.classList.add('custom-cursor-active');
