@@ -68,57 +68,57 @@ function About() {
                 <div className='col-md-6'>
                     <div className='skills-card'>
                     <img
-                        src="https://hire.codeclouds.com/_next/image/?url=https%3A%2F%2Fmedia.codeclouds.com%2Fsmall%2Ficon_javascript.png&w=48&q=75"
+                        src="/images/skills/javascript.png"
                         alt="JavaScript"
                         className='skill-icons' />
                     <img
-                        src="https://hire.codeclouds.com/_next/image/?url=https%3A%2F%2Fmedia.codeclouds.com%2Fsmall%2Ficon_typescript.png&w=48&q=75"
+                        src="/images/skills/typescript.png"
                         alt="TypeScript"
                         className='skill-icons' />
                     <img
-                        src="https://hire.codeclouds.com/_next/image/?url=https%3A%2F%2Fmedia.codeclouds.com%2Fsmall%2Ficon_react.png&w=48&q=75"
+                        src="/images/skills/react.png"
                         alt="React"
                         className='skill-icons' />
                     <img
-                        src="https://hire.codeclouds.com/_next/image/?url=https%3A%2F%2Fmedia.codeclouds.com%2Fxlarge%2Fbootstrap-4.svg&w=48&q=75"
+                        src="/images/skills/bootstrap.svg"
                         alt="Bootstrap"
                         className='skill-icons' />
                     <img
-                        src="https://hire.codeclouds.com/_next/image/?url=https%3A%2F%2Fmedia.codeclouds.com%2Fxsmall%2Ficon-figma.svg&w=48&q=75"
+                        src="/images/skills/figma.svg"
                         alt="Figma"
                         className='skill-icons' />
                     <img
-                        src="https://hire.codeclouds.com/_next/image/?url=https%3A%2F%2Fmedia.codeclouds.com%2Fxsmall%2Ficon-nextjs.svg&w=48&q=75"
+                        src="/images/skills/nextjs.svg"
                         alt="Next.js"
                         className='skill-icons' />
 
-                    <img src="https://hire.codeclouds.com/_next/image/?url=https%3A%2F%2Fmedia.codeclouds.com%2Fxsmall%2Ficon-nuxtjs.svg&w=48&q=75" alt="Nuxt.js" className="skill-icons" />
-                    <img src="https://hire.codeclouds.com/_next/image/?url=https%3A%2F%2Fmedia.codeclouds.com%2Fsmall%2Ficon_flutter.png&w=48&q=75" alt="Flutter" className="skill-icons" />
-                    <img src="https://hire.codeclouds.com/_next/image/?url=https%3A%2F%2Fmedia.codeclouds.com%2Fsmall%2Ficon_jquery.png&w=48&q=75" alt="jQuery" className="skill-icons" />
-                    <img src="https://hire.codeclouds.com/_next/image/?url=https%3A%2F%2Fmedia.codeclouds.com%2Fsmall%2Ficon_nodejs.png&w=48&q=75" alt="Node.js" className="skill-icons" />
-                    <img src="https://hire.codeclouds.com/_next/image/?url=https%3A%2F%2Fmedia.codeclouds.com%2Fxsmall%2Ficon-expressjs.svg&w=48&q=75" alt="Express.js" className="skill-icons" />
-                    <img src="https://hire.codeclouds.com/_next/image/?url=https%3A%2F%2Fmedia.codeclouds.com%2Fxsmall%2Ficon-dart.svg&w=48&q=75" alt="Dart" className="skill-icons" />
-                    <img src="https://hire.codeclouds.com/_next/image/?url=https%3A%2F%2Fmedia.codeclouds.com%2Fsmall%2Ficon_docker.png&w=48&q=75" alt="Docker" className="skill-icons" />
-                    <img src="https://hire.codeclouds.com/_next/image/?url=https%3A%2F%2Fmedia.codeclouds.com%2Fxsmall%2Fcheckout_champ.svg&w=48&q=75" alt="Checkout Champ" className="skill-icons" />
-                    <img src="https://hire.codeclouds.com/_next/image/?url=https%3A%2F%2Fmedia.codeclouds.com%2Fxxsmall%2Faws.svg&w=48&q=75" alt="AWS" className="skill-icons" />
-                    <img src="https://hire.codeclouds.com/_next/image/?url=https%3A%2F%2Fmedia.codeclouds.com%2Fxsmall%2Fios-bitbucket.svg&w=48&q=75" alt="Bitbucket" className="skill-icons" />
-                    <img src="https://hire.codeclouds.com/_next/image/?url=https%3A%2F%2Fmedia.codeclouds.com%2Fxsmall%2Ficon-laravel.svg&w=48&q=75" alt="Laravel" className="skill-icons" />
-                    <img src="https://hire.codeclouds.com/_next/image/?url=https%3A%2F%2Fmedia.codeclouds.com%2Fxsmall%2Ficon-github.svg&w=48&q=75" alt="GitHub" className="skill-icons" />
-                    <img src="https://hire.codeclouds.com/_next/image/?url=https%3A%2F%2Fmedia.codeclouds.com%2Fxlarge%2Fjoomla.svg&w=48&q=75" alt="Joomla" className="skill-icons" />
-                    <img src="https://hire.codeclouds.com/_next/image/?url=https%3A%2F%2Fmedia.codeclouds.com%2Fxsmall%2Ficon-klaviyo.svg&w=48&q=75" alt="Klaviyo" className="skill-icons" />
-                    <img src="https://hire.codeclouds.com/_next/image/?url=https%3A%2F%2Fmedia.codeclouds.com%2Fxsmall%2Ficon-php.svg&w=48&q=75" alt="PHP" className="skill-icons" />
-                    <img src="https://hire.codeclouds.com/_next/image/?url=https%3A%2F%2Fmedia.codeclouds.com%2Fxsmall%2Ficon_zapier.svg&w=48&q=75" alt="Zapier" className="skill-icons" />
-                    <img src="https://hire.codeclouds.com/_next/image/?url=https%3A%2F%2Fmedia.codeclouds.com%2Fxsmall%2Ficon-cloudflare.svg&w=48&q=75" alt="Cloudflare" className="skill-icons" />
-                    <img src="https://hire.codeclouds.com/_next/image/?url=https%3A%2F%2Fmedia.codeclouds.com%2Fxsmall%2Ficon-heroku.svg&w=48&q=75" alt="Heroku" className="skill-icons" />
-                    <img src="https://hire.codeclouds.com/_next/image/?url=https%3A%2F%2Fmedia.codeclouds.com%2Fxsmall%2Ficon-firebase.svg&w=48&q=75" alt="Firebase" className="skill-icons" />
-                    <img src="https://hire.codeclouds.com/_next/image/?url=https%3A%2F%2Fmedia.codeclouds.com%2Fsmall%2Ficon_mysql.png&w=48&q=75" alt="MySQL" className="skill-icons" />
-                    <img src="https://hire.codeclouds.com/_next/image/?url=https%3A%2F%2Fmedia.codeclouds.com%2Fxsmall%2Ficon-mongodb.svg&w=48&q=75" alt="MongoDB" className="skill-icons" />
-                    <img src="https://hire.codeclouds.com/_next/image/?url=https%3A%2F%2Fmedia.codeclouds.com%2Fxsmall%2Ficon-sql.svg&w=48&q=75" alt="SQL" className="skill-icons" />
-                    <img src="https://hire.codeclouds.com/_next/image/?url=https%3A%2F%2Fmedia.codeclouds.com%2Fxsmall%2Fgraphql-icon.svg&w=48&q=75" alt="GraphQL" className="skill-icons" />
-                    <img src="https://hire.codeclouds.com/_next/image/?url=https%3A%2F%2Fmedia.codeclouds.com%2Fxsmall%2Ficon-wordpress.svg&w=48&q=75" alt="WordPress" className="skill-icons" />
-                    <img src="https://hire.codeclouds.com/_next/image/?url=https%3A%2F%2Fmedia.codeclouds.com%2Fsmall%2Ficon_shopify.png&w=48&q=75" alt="Shopify" className="skill-icons" />
-                    <img src="https://hire.codeclouds.com/_next/image/?url=https%3A%2F%2Fmedia.codeclouds.com%2Fxsmall%2Ficon-konnektive.svg&w=48&q=75" alt="Konnektive" className="skill-icons" />
-                    <img src="https://hire.codeclouds.com/_next/image/?url=https%3A%2F%2Fmedia.codeclouds.com%2Fsmall%2Ficon_woocommerce.png&w=48&q=75" alt="WooCommerce" className="skill-icons" />
+                    <img src="/images/skills/nuxtjs.svg" alt="Nuxt.js" className="skill-icons" />
+                    <img src="/images/skills/flutter.png" alt="Flutter" className="skill-icons" />
+                    <img src="/images/skills/jquery.png" alt="jQuery" className="skill-icons" />
+                    <img src="/images/skills/nodejs.png" alt="Node.js" className="skill-icons" />
+                    <img src="/images/skills/expressjs.svg" alt="Express.js" className="skill-icons" />
+                    <img src="/images/skills/dart.svg" alt="Dart" className="skill-icons" />
+                    <img src="/images/skills/docker.png" alt="Docker" className="skill-icons" />
+                    <img src="/images/skills/checkout-champ.svg" alt="Checkout Champ" className="skill-icons" />
+                    <img src="/images/skills/aws.svg" alt="AWS" className="skill-icons" />
+                    <img src="/images/skills/bitbucket.svg" alt="Bitbucket" className="skill-icons" />
+                    <img src="/images/skills/laravel.svg" alt="Laravel" className="skill-icons" />
+                    <img src="/images/skills/github.svg" alt="GitHub" className="skill-icons" />
+                    <img src="/images/skills/joomla.svg" alt="Joomla" className="skill-icons" />
+                    <img src="/images/skills/klaviyo.svg" alt="Klaviyo" className="skill-icons" />
+                    <img src="/images/skills/php.svg" alt="PHP" className="skill-icons" />
+                    <img src="/images/skills/zapier.svg" alt="Zapier" className="skill-icons" />
+                    <img src="/images/skills/cloudflare.svg" alt="Cloudflare" className="skill-icons" />
+                    <img src="/images/skills/heroku.svg" alt="Heroku" className="skill-icons" />
+                    <img src="/images/skills/firebase.svg" alt="Firebase" className="skill-icons" />
+                    <img src="/images/skills/mysql.png" alt="MySQL" className="skill-icons" />
+                    <img src="/images/skills/mongodb.svg" alt="MongoDB" className="skill-icons" />
+                    <img src="/images/skills/sql.svg" alt="SQL" className="skill-icons" />
+                    <img src="/images/skills/graphql.svg" alt="GraphQL" className="skill-icons" />
+                    <img src="/images/skills/wordpress.svg" alt="WordPress" className="skill-icons" />
+                    <img src="/images/skills/shopify.png" alt="Shopify" className="skill-icons" />
+                    <img src="/images/skills/konnektive.svg" alt="Konnektive" className="skill-icons" />
+                    <img src="/images/skills/woocommerce.png" alt="WooCommerce" className="skill-icons" />
                     </div>
                 </div>
             </div>

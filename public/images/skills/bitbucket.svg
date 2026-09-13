@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 256 256" style="enable-background:new 0 0 256 256;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;}
+	.st1{fill:#2684FF;}
+	.st2{fill:url(#Path_8786_00000034065087586231187210000002767626832365876905_);}
+</style>
+<g id="Group_4750" transform="translate(-592 -832)">
+	<rect id="Rectangle_4080" x="592" y="832" class="st0" width="256" height="256"/>
+	<g id="mark-gradient-blue-bitbucket" transform="translate(592 844.908)">
+		<path id="Path_8785" class="st1" d="M8.2,0C3.7,0,0,3.6,0,8.2c0,0.4,0,0.8,0.1,1.2l34.5,211.4c0.8,5.5,5.6,9.5,11.1,9.4h167.1
+			c3.9-0.1,7.3-3,8.1-6.8l35-213.6c0.8-4.3-2.1-8.5-6.5-9.3c-0.5-0.1-1.1-0.1-1.6-0.1L8.2,0z M154.9,152.6h-53.3L87.5,77.2h80.6
+			L154.9,152.6z"/>
+		
+			<linearGradient id="Path_8786_00000091700683763346337990000002583612246045239457_" gradientUnits="userSpaceOnUse" x1="-550.2168" y1="498.2821" x2="-550.8348" y2="497.6311" gradientTransform="matrix(205.462 0 0 -152.605 113310.8594 76138.6875)">
+			<stop  offset="0.176" style="stop-color:#0052CC"/>
+			<stop  offset="1" style="stop-color:#2684FF"/>
+		</linearGradient>
+		<path id="Path_8786" style="fill:url(#Path_8786_00000091700683763346337990000002583612246045239457_);" d="M244.4,77.2h-76.7
+			l-12.8,75.4h-53.3l-62.7,74.6c2.1,1.6,4.6,2.5,7.2,2.6h167.1c3.9-0.1,7.3-3,8.1-6.8L244.4,77.2z"/>
+	</g>
+</g>
+</svg>
