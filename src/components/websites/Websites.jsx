@@ -17,6 +17,7 @@ const WEBSITE_CATEGORIES = {
         'https://aashniandco.com/',
         'https://onirest.com/',
         'https://drinkmaw.com/',
+        'https://www.saintsamsonparfums.com/',
     ].map(toSite),
     WordPress: [
         'https://biopreventative.com/',

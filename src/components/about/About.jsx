@@ -99,7 +99,6 @@ function About() {
                     <img src="/images/skills/expressjs.svg" alt="Express.js" className="skill-icons" />
                     <img src="/images/skills/dart.svg" alt="Dart" className="skill-icons" />
                     <img src="/images/skills/docker.png" alt="Docker" className="skill-icons" />
-                    <img src="/images/skills/checkout-champ.svg" alt="Checkout Champ" className="skill-icons" />
                     <img src="/images/skills/aws.svg" alt="AWS" className="skill-icons" />
                     <img src="/images/skills/bitbucket.svg" alt="Bitbucket" className="skill-icons" />
                     <img src="/images/skills/laravel.svg" alt="Laravel" className="skill-icons" />
