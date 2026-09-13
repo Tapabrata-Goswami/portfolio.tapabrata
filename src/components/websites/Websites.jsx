@@ -8,7 +8,6 @@ const toSite = (url) => ({ url, label: new URL(url).hostname.replace(/^www\./, '
 
 const WEBSITE_CATEGORIES = {
     Shopify: [
-        'https://cheechandchong.com/',
         'https://luv.health/',
         'https://aillio.com/',
         'https://tmgskin.com/',
